@@ -136,7 +136,7 @@ class JustCalcApp(App):
 
         self.operation_order = list('+−×÷^√')
         self.operation_buttons = []
-        
+
         self.calculated = False
 
     def build(self):
