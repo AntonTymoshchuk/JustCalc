@@ -3,6 +3,7 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.label import Label
 from kivy.uix.button import Button
 from kivy.core.window import Window
+from kivy.config import Config
 
 
 class JustCalcApp(App):
@@ -439,5 +440,6 @@ class JustCalcApp(App):
 
 
 if __name__ == '__main__':
+    Config.set('kivy', 'window_icon', 'icons8-math-100.ico')
     Window.clearcolor = [0.93, 0.94, 0.95, 1]
     JustCalcApp().run()
